@@ -507,3 +507,99 @@ section {
     width: auto;
     height: 35px;
 }
+
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+            "logo wpp"
+            "menu menu";
+        row-gap: 8px;
+    }
+
+    #logo {
+        grid-area: logo;
+    }
+
+    nav {
+        grid-area: menu;
+    }
+
+    .wpp-btn {
+        grid-area: wpp;
+    }
+
+    .menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-texto {
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .banner-texto p {
+        font-size: 16px;
+    }
+
+    .sobre-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .sobre-imagem img {
+        width: 100%;
+        height: auto;
+    }
+
+    .sobre-texto {
+        padding: 20px;
+        min-height: auto;
+    }
+
+    .diferenciais {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .servico-item {
+        padding: 5px 20px;
+    }
+
+    .marketplace-container {
+        padding: 30px 20px;
+    }
+
+    .marketplace-topo {
+        flex-direction: column;
+    }
+
+    .marketplace-imagens-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .marketplace-imagens-container img {
+        width: 100%;
+        max-width: 240px;
+        height: 120px;
+        margin: 0 auto;
+    }
+
+    .marketplace-mapa {
+        height: 300px;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+}
